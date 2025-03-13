@@ -67,7 +67,7 @@ AuthRouter.post('/register', async (req, res)=>{
             userId = last_user.id+1;
         }else{ 
             userId = 1
-        }
+        }               
 
         const newUser = new UserModel({
             id: userId,
